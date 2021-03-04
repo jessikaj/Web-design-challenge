@@ -1,0 +1,152 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* MAIN NAVIGATION */
+.main-nav {
+    background-color: #333;
+    color: orangered;
+    padding: 1rem;
+}
+
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-text {
+    color: blue;
+    padding: 0 1rem;
+}
+
+.nav-text:hover {
+    color: #88dfff;
+    text-decoration: none;
+}
+
+.nav-ul {
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
+
+.nav-ul li {
+    padding: .5rem;
+}
+
+
+
+
+/* INDEX PAGE */
+
+/* SIDEBAR */
+.sidebar {
+    background-color: #88dfff;
+    min-height: 100vh;
+    width: 30%;
+}
+
+.visualization-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    width: 100%;
+}
+.visualization-items:hover {
+    background-color: blue;
+}
+
+.visualization-items img {
+    width: 100%;
+}
+
+
+/* MAIN CONTENT */
+.main {
+    padding: 2rem;
+    background-color: rgb(76, 168, 249);
+    width: 70%;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    /* stack the layout */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* streach sidebar / main content 100% */
+    .sidebar {
+        width: 100%;
+        order: 2;
+    }
+
+    .main {
+        order: 1;
+        width: 100%;
+    }
+}
+
+
+/* COMPARISONS PAGE */
+
+.comparisons-main,
+.data-main,
+.visualization-main {
+    background-color:  rgb(76, 168, 249);
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comparisons-main img {
+    width: 100%
+}
+
+/* VISUALIZATION PAGES */
+.card {
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+}
+
+.card img {
+    width: 100%;
+    max-width: 30rem;
+}
+
